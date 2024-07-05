@@ -1,0 +1,21 @@
+public class Count{
+public static void main(String[] args){
+String s="abc1235#";
+int uppercount=0,lowercount=0,digitcount=0,symbolcount=0;
+for(int i=0;i<s.length();i++){
+char ch=s.charAt(i);
+if(ch>='A' && ch<='z')
+uppercount++;
+else if(ch>='a' && ch<='z')
+lowercount++;
+else if(ch>='0' && ch<='9')
+digitcount++;
+ else
+  symbolcount++;
+}
+System.out.println(uppercount+" ");
+System.out.println(lowercount+" ");
+System.out.println(digitcount+" ");
+System.out.println(symbolcount+" ");
+}
+}
